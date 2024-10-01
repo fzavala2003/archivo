@@ -73,7 +73,7 @@ AUTOTHROTTLE_START_DELAY = 10
             ...
         }
 ```
-    Para que en vez de eso se utilice scrapy items.
+        Para que en vez de eso se utilice scrapy items.
 
 3. No se si este correcto poner el site en el meta del pedido para luego poder extraerlo en la response ya estando en la funcion parse_search_site(self,response). Preguntarle a Erick.
 
