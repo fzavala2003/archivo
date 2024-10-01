@@ -64,7 +64,7 @@ AUTOTHROTTLE_START_DELAY = 10
 
 ## **Posibles mejoras**
 1. Mejores nombres de variables.
-2. Deberia crearse un scrapy item cada en vez de utilizar 
+2. Deberia crearse un scrapy item cada en vez de utilizar: 
 ```
         yield {
             "WordPress_site":site,
@@ -97,21 +97,23 @@ AUTOTHROTTLE_START_DELAY = 10
 
 # **Otros comandos esenciales**
 
-- 
-## **Comando para crear un proyecto scrapy**
+#### **Comando para crear un proyecto scrapy**
 ```scrapy startproject nombre_del_proyecto```
-- 
-## **Comando para crear un spider**
+
+#### **Comando para crear un spider**
 
 ``` scrapy genspider nombre_del_spider dominio.com ```
+
 **Nota:** Se considera que estas dentro de la carpeta nombre_del_proyecto
-- 
-## **Comando para ejecutar un spider**
+
+#### **Comando para ejecutar un spider**
 ``` scrapy crawl nombre_del_spider ```
+
 **Nota:** El nombre del spider no es el nombre del archivo.py. Es el que se encuentra dentro de la clase con la variable name="nombre"
--
-## **Comando para ejecutar un spider y guardarlo en un csv**
+
+#### **Comando para ejecutar un spider y guardarlo en un csv**
 ``` scrapy crawl nombre_del_spider -o nombre_archivo.csv ```
+
 **Nota:** Si el archivo no existe, se crea. Si existe, cada vez ejecutado este comando, su contenido será reemplazado con la nueva salida del spider.
 
 
