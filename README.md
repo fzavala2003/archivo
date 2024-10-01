@@ -102,15 +102,15 @@ AUTOTHROTTLE_START_DELAY = 10
 
 #### **Comando para crear un spider**
 
-``` scrapy genspider nombre_del_spider dominio.com ```
+```scrapy genspider nombre_del_spider dominio.com```
 **Nota:** Se considera que estas dentro de la carpeta nombre_del_proyecto
 
 #### **Comando para ejecutar un spider**
-``` scrapy crawl nombre_del_spider ```
+```scrapy crawl nombre_del_spider```
 **Nota:** El nombre del spider no es el nombre del archivo.py. Es el que se encuentra dentro de la clase con la variable name="nombre"
 
 #### **Comando para ejecutar un spider y guardarlo en un csv**
-``` scrapy crawl nombre_del_spider -o nombre_archivo.csv ```
+```scrapy crawl nombre_del_spider -o nombre_archivo.csv```
 **Nota:** Si el archivo no existe, se crea. Si existe, cada vez ejecutado este comando, su contenido será reemplazado con la nueva salida del spider.
 
 
