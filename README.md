@@ -64,7 +64,7 @@ AUTOTHROTTLE_START_DELAY = 10
 
 ## **Posibles mejoras**
 1. Mejores nombres de variables.
-2. Deberia crearse un scrapy item cada en vez de utilizar: 
+2. Cambiar: 
 ```
         yield {
             "WordPress_site":site,
@@ -73,6 +73,8 @@ AUTOTHROTTLE_START_DELAY = 10
             ...
         }
 ```
+Para que en vez de eso se utilice items.
+
 3. No se si este correcto poner el site en el meta del pedido para luego poder extraerlo en la response ya estando en la funcion parse_search_site(self,response). Preguntarle a Erick.
 
 
@@ -103,14 +105,17 @@ AUTOTHROTTLE_START_DELAY = 10
 #### **Comando para crear un spider**
 
 ```scrapy genspider nombre_del_spider dominio.com```
+
 **Nota:** Se considera que estas dentro de la carpeta nombre_del_proyecto
 
 #### **Comando para ejecutar un spider**
 ```scrapy crawl nombre_del_spider```
+
 **Nota:** El nombre del spider no es el nombre del archivo.py. Es el que se encuentra dentro de la clase con la variable name="nombre"
 
 #### **Comando para ejecutar un spider y guardarlo en un csv**
 ```scrapy crawl nombre_del_spider -o nombre_archivo.csv```
+
 **Nota:** Si el archivo no existe, se crea. Si existe, cada vez ejecutado este comando, su contenido será reemplazado con la nueva salida del spider.
 
 
